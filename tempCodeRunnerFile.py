@@ -1,1 +1,1 @@
-pool_size
+filter_size
