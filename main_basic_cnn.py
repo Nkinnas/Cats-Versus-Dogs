@@ -88,7 +88,7 @@ model.compile(
 
 batchSize = 16
 stepsPerEpoch = 345 // batchSize 
-epochs = 2
+epochs = 1
 
 testImgData = ImageDataGenerator(rescale=1./255)
 trainImgData = ImageDataGenerator(rescale=1./255)
@@ -113,5 +113,4 @@ model.fit_generator(
     validation_data=validation_generator,
     validation_steps= 800 // batchSize)
 
-model.save_weights('first_try.h5')
 
